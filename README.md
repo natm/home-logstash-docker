@@ -1,10 +1,12 @@
 # Home Logstash instance in Docker
 
-Inherits from `logstash:5.2.2`.
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/natm/home-logstash-docker/master/LICENSE)
 
-* Listens on port 514 on a dedicated IP.
+Inherits from `logstash:5.2.2`, [Dockerfile](https://github.com/docker-library/logstash/blob/master/5/Dockerfile).
+
+* Listens on port 514 on a dedicated IP (announced as a /32 to the Docker host).
 * Posts APC UPS power failure / restoration events to Slack.
-* Sends logs to a free Loggly account.
+* Sends logs to a free [Loggly](http://www.loggly.com) account.
 
 ## Running it
 
