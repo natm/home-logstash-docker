@@ -8,6 +8,8 @@ Inherits from `logstash:5.2.2`, [Dockerfile](https://github.com/docker-library/l
 * Posts APC UPS power failure / restoration events to Slack.
 * Sends logs to a free [Loggly](http://www.loggly.com) account.
 
+![Screenshot](https://raw.github.com/natm/home-logstash-docker/master/docs/screenshot_slack1.png)
+
 ## Running it
 
 Start with `docker run --restart=always --name logstash -p 185.61.112.99:514:5000/udp --env-file /etc/logstash/envvars -t homelogstash:latest`
