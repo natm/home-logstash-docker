@@ -6,7 +6,10 @@ Inherits from `logstash:5.2.2`, [Dockerfile](https://github.com/docker-library/l
 
 * Listens on port 514 on a dedicated IP (announced as a /32 to the Docker host).
 * Posts APC UPS power failure / restoration events to Slack.
-* Sends logs to a free [Loggly](http://www.loggly.com) account.
+* Sends logs to a free accounts on:
+ * [Loggly](http://www.loggly.com)  - excellent!
+ * [Logentries](http://www.logentries.com) - reasonable
+
 
 ![Screenshot](https://raw.github.com/natm/home-logstash-docker/master/docs/screenshot_slack1.png)
 
